@@ -26,7 +26,7 @@ function excellent (){
   //element.style.color = "pink";
   element.innerHTML = "Tip 30% "; 
               
-console.log('They went above and beyond for you and they deserve it. Tip them : $'+ Math.floor(total)* .30);
+console.log('They went above and beyond for you and they deserve it, tip them : $'+ Math.round((total)* .30));
 
 }
 //element.onclick = excellent;
@@ -41,7 +41,7 @@ console.log('They went above and beyond for you and they deserve it. Tip them : 
   // element1.style.color = "green";
   element1.innerHTML = "Tip 20% "; 
 	 
-	 console.log('They tried  for you and they deserve it. Tip them : $'+ (total)* .20);
+	 console.log('They tried  for you and they deserve it, tip them : $'+ Math.round((total)* .20));
  }
 // element1.onclick = veryGood;
  //console.log(veryGood());
@@ -55,19 +55,19 @@ console.log('They went above and beyond for you and they deserve it. Tip them : 
   // element1.style.color = "green";
   element2.innerHTML = "Tip 15% "; 
 	 
-	 console.log('They did a good job and they deserve it. Tip them : $'+ (total)* .15);
+	 console.log('They did a good job and they deserve it, tip them : $'+ Math.round((total)* .15));
  }
 
 
  let element3 = document.querySelector(".bad");
 
- function good (total){
+ function bad (total){
  		  var total = prompt("What is your total? ");
  //	element1.style.backgroundColor = "black";
   // element1.style.color = "green";
   element3.innerHTML = "Tip 10% "; 
 	 
-	 console.log('They did a terrible job and barely deserve it. Tip them : $'+ (total)* .10);
+	 console.log('They did a terrible job and barely deserve it, tip them : $'+ Math.round((total)* .10));
  }
 
 
