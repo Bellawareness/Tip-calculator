@@ -1,23 +1,31 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-background-color: #ffffff;
-	font-weight: bold;
-     }
+	  font-family: Arial, Helvetica, sans-serif;
+/* 	background-color: ##C1DFD4; */
+			background-image: url("b.jpg");
+		background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	     }
 
 
 /* everything are in this  */
 .container{
-  	background:linear-gradient(to bottom, #a1cebd 5%, #b3cbd6 100%);
+		background: transparent;
 		justify-content: center;
 		align-content: center;
 		display:flex;
-    opacity: 0.66;
  		flex-direction: column;
+		width: 100%;
 
 
 }
 /* title intro   */
-
+.acontainer{
+		display:flex;
+ 		flex-direction: column;
+	
+}
 p,
 h3,
 h1{
@@ -26,10 +34,19 @@ h1{
 		display:flex;
   	justify-content: center;
 		align-content: center;
+		background:linear-gradient(to bottom, #a1cebd 5%, #b3cbd6 100%);
+		padding:16px 24px;
+		margin: 12px 40px;
+}
+
+span{
+  	color:#4b0dbf;
+		font-size:15px;
+		text-align: center;
+	
 }
 
 .image {
-  height: auto;
 		align-content: center;
 		display:flex;
   	justify-content: center;
@@ -45,14 +62,12 @@ h1{
 .container1{
 	background-image: url("b.jpg");
 	background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-
-align-content: center;
-display:flex;
-flex-direction: column;
-
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-content: center;
+	display:flex;
+	flex-direction: column;
 }
 
 button {
@@ -60,14 +75,14 @@ button {
 	background:linear-gradient(to bottom, #21ded1 5%, #cbd4d8 100%);
 	background-color:#336149;
 	border-radius:50px;
-	border:4px solid #f6f4f6;
+	border:4px solid #336149;
 	display:inline-block;
 	cursor:pointer;
 	color:#2f37a2;
 	font-family:Arial;
 	font-size:25px;
 	font-weight:bold;
-	padding:16px 24px;
+	padding:6px 24px;
 	text-decoration:none;
 	margin: 12px 40px;
   
@@ -88,21 +103,31 @@ button:active {
 
 .row1{
   justify-content: center;
-align-content: center;
+	align-content: center;
 	display:flex;
+	padding:16px 10px;
+flex-direction: column;
 
 }
 
 #log{
   	background:linear-gradient(to bottom, #b9b6c8 5%, #85bc9d 100%);
   background-color:#b7d7c8;
-	display:flex;
 	padding:26px 24px;
   justify-content: center;
-	font-size:15px;
+	font-size:22px;
 	color:#f0f0f4;
 	font-weight:bold;
   border-radius:50px;
-	margin: 22px 60px ;
+	display: flex;
+
+flex-direction: column;
 
 }
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+      margin: 120px 10px;
+    }
+     
